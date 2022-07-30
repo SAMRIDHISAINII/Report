@@ -1,52 +1,197 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\title{Intuitive Model of Skin Disease Prediction utilizing Machine Learning: A Review
+}
+\author{Samridhi, Zeba Mohsin Wase}
 
-\title{Design Trends}
-\author{Samridhi Saini}
-\date{June 2022}
+\date{03/12/2021}
 
 \begin{document}
 
 \maketitle
 
+\section{Motivation}
+
+We were extremely fascinated with the idea of implementing something that could briefly shed light to the vast topic of Skin Diseases. The data here, have been taken from several available pages. Our aim was to try to create a difference by doing our bit and any necessary efforts that we can put into it. At last, we would like to appreciate the efforts and the inspiration that our professor, Mr. Umesh Gupta had instilled within us.
+\section{Abstract}
+
+We have been spectators to many skin diseases over the years, some known and many still mysterious and unknown. Many of these remain undiscovered for several centuries due to insufficient medical amenities and slow progress over the years.
+With the advancement in the way and approach towards problems, we can easily use the powerful tools available. Hence, we propose a solution that may prove to be a successful way to tackle the problem.
+We have built a solution that helps the researcher to functionally propose a Convolutional Neural Network (CNN) and blend it with the help of Support Vector Machine to create a mobile android application. To check the peak performance of the system, we have conducted several extensive experiments on our dataset. The dataset used consists of around 3,000 images found and collected from various trusted websites and sources so that our model can be tested on a realistic basis and provide accurate and precise results.
+A comparative and substantial study of seeking divergent or inconsistent Feature Extraction Algorithms (As explained in detail below) with various classifiers was achieved.
+The results exhibited astonishing results with the accomplishment of the proposed(CNN - SVM - MAA) system of the number of skin disease images that have been detected from our advancing dataset. This led to detecting skin diseases and providing the user with the disease name and prescription related pertaining to treatment with high yet acceptable accuracy.
+
+\begin{center}
+    \includegraphics[]{img23.png}
+\end{center}
+
 \section{Introduction}
- Design is the practice of making something that’s beautiful. As a design trend, User Experience Design is one of the most significant fields in today’s information age because it helps companies create better products and services for their customers.
-The top UX design trends for 2022 will focus on how we can make the web of things more personal and compelling. People are increasingly demanding customization as a feature, and from manufacturers as well as from designers of individual user experience (UX).
-User experience design is essential for the success of any product. Top UX design trends of 2022: AR/VR, AI, crowdsourcing, and digital assistants
-The top UX design trends of 2022 are the rise of the digital native. We'll see emerging product categories like wearables and DIY products that use smart tech to make the entire workflow more efficient. The top UX design trends of 2022 according to other source  are user interface, data security and privacy, artificial intelligence, augmented reality, and robotics.
+Skin diseases have been a varied disease and are occurring in all age groups among all people all over the world. There has been an overwhelming increase in the frequency of detection and rate due to our degrading lifestyles and ever-changing environment due to climatic changes all over the world.
+On average, every one out of five people is infected with any existing or non- discovered skin disease. There is a list of factors that contribute to the disease. Some include cell structure build, dietary habits, hierarchical genetic group of cells, hormones and their working in different conditions, and the extent of the immune system. External factors also play a very pivotal role such as geographical changes and commuting anthropologies.
+All these factors accumulate to the development of a sequence of skin diseases.
+A vast assortment of the prevailing skin diseases like eczema and psoriasis can be chronic and incurable, while some can be malignant like melanoma.
+With the advancement and progress in this field, we have been able to develop cures for many of the non-curable diseases.
+From our extensive research, we have been able to create an approach to detection of skin disease by using e Naive Bayes, CNN, SVM methods proved to be necessary and important in order to empower people who are curious to interpret skin diseases that are being diagnosed.
 
-\subsubsection{Top UX design trends of 2022}
-1. Natural User Interfaces 
- The main trend for 2022 is natural user interfaces. The design should make a real connection with the user from the start and not just inform them of functions or benefits. It should be easy to grasp, provide feedback and have emotional impact.
+Many researchers have indirectly contributed to this as we had to go through several research papers that helped us understand the applications.
+As it is conventionally believed and conceived that the majority of skin problems are hard to detect and classify. Since a large chunk of these diseases is melanoma, they can also reach other body parts.
+So, to differentiate these skin diseases, we have implemented Support Vector Machine (SVM), a machine learning algorithm that can be used for image classification and is also used to tackle the classical problems of concern in image processing.
+SVM as specified above is classified under supervised learning models and is a part of a machine learning algorithm that is used to analyze structured and unstructured data such as text and images and also requires clean data.
+The review clearly explains the difference and application of machine learning algorithm.
+So in this review, we have implemented the use of image processing using OpenCV along with machine learning applications.
+The proper execution and implementation of CNN, SVM, and Statistical analysis helped in providing the necessary data to detect these diseases.
+Hence, if put in simple terms, the proposed solution suggests treatment along with the detection.
+In order to build an accurate model that is able to provide reliable results with a large extent of correct results, the model has been trained using more than 3000 images of various kinds. Several databases available have been deployed in order to get a larger dataset of samples that could in turn generate better results.
+The simple choice of using android promises a greater outreach to the number of people as it is used by 1/3rd of the population.
+The onset of the disease in the early stages can be very difficult for detection. The way of working of our application is listed and depicted in the images below.
+We have tried to keep things as organized as possible and have provided simple navigation throughout.
 
-2. Experience-based Design
- Experience-based Design is the integration of user experience design and discovery into business models and processes. This has allowed companies to focus their efforts on improving technology products by focusing on their use. 
- 
-3. Mobile For Every Screen 
- Mobile for every screen 2022 trends, Current and future trends in the technology arena of mobile devices, 2D and 3D displays and wireless Internet access
-4. Contextual Interactions
-Contextual Interactions are one of the most interesting and valuable trends in UX design. Contextual Interactions help users enter a flow state, which make them feel like they’re becoming a part or contributing to something. In short, they are hands-on and make users feel emotionally included in the action.
+\section{Literature Review}
 
-5. AI-enabled Software
- AI-enabled software UX ui trends in 2022 represents a more user-centric, engaging and adaptive user experience. It is expected to deliver more personalized interactions between users, organizations and technology through a more intuitive user interface that allows users to gain an understanding of their identity and skills.
- 
- 6. Augmented Reality
- Augmented Reality ux ui trends in 2022 to take your business past the threshold of being a user experience design trend. Augmented reality or virtual reality (augmented reality and virtual reality, respectively), is the creation of an artificial world (an immersive experience), combining elements of both the real world and the digital world. Augmented reality ux designs show a creative and effective way to replace traditional websites by allowing users to create a fully immersive experience that surpasses what is possible with a desktop computer.
- 
-\subsubsection{Customers as Competitors in Purchasing Decisions.} 
-1. Wearable Technology
-The wearable technology industry has exploded over the past few years and you can find tons of wearable devices at your local electronics store. The main purpose of these devices is to track your daily activities, including steps and sleep, heartbeat and more to help you improve your health and overall wellbeing. But there are also other different types of wearables, like exercise bands and even watch-like devices that come with impressive features like GPS tracking for for skiing or hiking.
+** We had to go through many literary references in order to clear any doubts and get a clearer insight into the work. Here are a few that we thought were worth mentioning :
+[1] Damilola A. Okuboyejo, Oludayo O. Olugbara, and Solomon A. Odunaike, “Automating Skin Disease Diagnosis Using Image Classification,” Proceedings of the World Congress
+Skin Disease Prediction - A Review 5
+on Engineering and Computer Science 2013 Vol II, WCECS 2013, 23-25 October 2013,
+San Francisco, USA.
+[2] R. Yasir, M. A. Rahman and N. Ahmed, "Dermatological disease detection using image
+processing and artificial neural network," 8th International Conference on Electrical and
+Computer Engineering, Dhaka, 2014, pp. 687-690, doi: 10.1109/ICECE.2014.7026918. [3] Ambad, Pravin S., and A. S. Shirat, “An Image Analysis System to Detect Skin Diseases,”
+IOSR Journal of VLSI and Signal Processing (IOSR-JVSP), Volume 6, Issue 5, Ver. I
+(Sep. - Oct. 2016), PP 17-25.
+[4] R S Gound, Priyanka S Gadre, Jyoti B Gaikwad and Priyanka K Wagh, "Skin Disease
+Diagnosis System using Image Processing and Data Mining," International Journal of
+Computer Applications 179(16):38-40, January 2018.
+[5] V. B. Kumar, S. S. Kumar, and V. Saboo, "Dermatological disease detection using image
+processing and machine learning," 2016 Third International Conference on Artificial Intelligence and Pattern Recognition (AIPR), Lodz, 2016, pp. 1-6, doi: 10.1109/ICAIPR.2016.7585217.
+[6] M. Shamsul Arifin, M. Golam Kibria, A. Firoze, M. Ashraful Amini and Hong Yan, "Dermatological disease diagnosis using color-skin images," 2012 International Conference on Machine Learning and Cybernetics, Xian, 2012, pp. 1675-1680, doi: 10.1109/ICMLC.2012.6359626.
+[7] Raja, K.S., Kiruthika, U. An Energy Efficient Method for Secure and Reliable Data Transmission in Wireless Body Area Networks Using RelA
 
- 2. IoT-based Workshops
- This book analyzes the future trends and designs of top user experience design and user interface moving towards 2022. It also presents the IoT-based workshops and UI/UX makes. This will give you a comprehensive understanding of how technology is changing our lives, and how you can use it to create breakthroughs in your business.
- 
- Customers as Competitors in Purchasing Decisions these are more of them Physical Stores, Conversational Commerce, Social Commerce, Glocalization. More Complex Interactions
- 
- \section{summary}
- There are more than 1.25 billion mobile devices in use globally today, according to the U.S. Department of Commerce’s Bureau of Economic Analysis. That number is expected to grow at a rate of 8% annually over the next five years and will reach almost 2 billion by 2022 (the same year that the entire world population using Google’s search engine).  Top ux design trends of 2022 will help improve user experience, increase user adoption and increase the efficiency of a product. In addition to that top-notch ux design trends 2022 make customers fall in love with your product.The key is to stay at the forefront of these developments, because if you don't, your competitors will! Since user experience can make or break a product or service, it is vital that you are always evolving as a business .
+\section{Algorithms}
+\begin{center}
+    \includegraphics[]{img34.png}
+\end{center}
+\section{Methodology}
 
- The rapid evolution of the user experience has brought us to a new level of user engagement. The top UX design trends for 2022 will change the way we interact with our devices and the world.
+\textbf{5.1 Getting started with the research work:}
+
+We have divided our target focus into the following steps-
+- The problem being defined over a ‘problem worth working on’ is a set of data that could provide information in the best way possible. This could be achieved thri=ough meticulous searching of literature survey papers that hold a direct relation to this domain or through the ones that are related indirectly.
+
+- Out of 25 papers available and shortlisted, we further narrowed our focus with footnotes to 4 papers that served the purpose and provided the relevant information.
+
+- Based on recommendations and analysis, we have used SVM as our selected classification algorithm. The entire problem and solution do revolve around the idea above to some extent.
+
+- The final application of the model proposed is used on a dataset that suggests the skin disease type and the relevant conclusion is drawn.
+
+\textbf{
+5.2 Defining and approaching the problem along with interlinking research questions:
+}
+
+The main aim of trying to create this model is “Intuitive Model of Skin Disease Prediction utilizing required Processing and Machine Learning Algorithms (CNN and SVM).”
+
+Questions that we kept in mind throughout are -
+
+1. Why do we want to implement SVM and whether the detection is an acceptable one.
+2. Which skin types are prone to more danger (A concluding question)
+
+\textbf{5.3 Creating and describing a Dataset description:}
+
+We have tried to source our data samples from a large pool of data available so that we are able to tackle a larger set and type of data.
+In the end, we try to create a model that can be accurate and realistic and holds significant relevance. In order to make sense of the data available, we have divided the data into two kinds - training set and test set.
+The training set as the name suggests serves the simple purpose of training the model and the test set is utilized to check the credibility of the model. Our dataset is then further classified into several groups. We have given preference to more prominent data.
 
 
+\textbf{5.4 Classification Steps:}
+
+The figure below clearly depicts the flow of classification done by an algorithm using SVM. The input data is reviewed as the input image step . This includes the enhancement of the brightness and contrast or resize the image is required. The feature extraction involves the processing of several layers of the image in order to make use of the algorithm.
+
+\begin{center}
+    \includegraphics[]{pic.png}
+\end{center}
+\section{Steps for processing Android Application}
+
+Application layout and execution are very simple with a few easy steps that can be implemented.
+The main page consists of the login page which is divided into 2 parts for doctor and patient. The dashboards for the two are two separate entities like click image and load image for the two different individuals. Manual input of data in the form of symptoms can be done using the added feature.
+
+\subsubsection{A brief overview of the application is provided below :}
+
+\begin{center}
+    \includegraphics[]{ppio.png}
+\end{center}
+\textbf{7.1 Image Acquisition :}
+
+A number of features are included on this page. In some cases, permission might be required on the android device to enable the path to the desired image desired.
+The image is then gathered by navigating to that particular point. A very similar layout has been created to generate the report or view any previous medical history.
+
+\textbf{7.2 Preprocessing:}
+
+
+There were some problems with our dataset. Therefore, we tried to overcome some problems like color contrast and image size by using the module that we had in our database.
+In python, we have an image resizer that resizes all the images prior to filling them into the server processing. Basically, the actual purpose of this level is to get rid of the background noises such as hair and air bubbles, etc in the image. To abolish these noises from that skin image in order to get the perfect image, median filtering, mean, variance, and histogram all are used. Hence, after accomplishing the post-processing is used to upgrade the shape and edges of mages.
+
+\textbf{7.3 Classification:}
+
+In this step, the SVM is utilized which is basically a statistical analysis algorithm built on statistical theory and best for the classification of various diseases. This technique helps in identifying the disease by feeding trained data into it. There are some characteristics like color,texture,etc which are taken out from trained datasets and hence a pre-built model is to identify various diseases.
+
+\section{Results and Conclusions}
+
+
+In the beginning, we optimized the skin images using image processing by the removal of the background. We have decided to find the affected area and use the necessary cavities equalization technique to realize the same.
+
+\begin{center}
+    \includegraphics[]{iop.png}
+\end{center}
+
+\subsubsectionThe{} Model has been trained with a little modification. The different detection rates for the different types of disease have been specified here.
+
+\begin{center}
+    \includegraphics[]{poto.png}
+\end{center}
+
+
+\subsectionIn{} Simple words, early detection would lead to early treatment and early cure. The main identification and use of a model based on CNN and SVM have proved to be a great asset.
+
+\begin{center}
+    \includegraphics[]{pto98.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[]{qwe.png}
+\end{center}
+
+\begin{center}
+    \includegraphics[]{ert.png}
+\end{center}
+\section{Discussion and Future Scope}
+
+
+The model still needs a lot of training and has to be tested with the different datasets to ensure accuracy. In the future, many different diseases which we have not stated here could be worked upon. This model holds great potential for improvement and up-gradation.
+
+\section{References}
+
+
+[1] Damilola A. Okuboyejo, Oludayo O. Olugbara, and Solomon A. Odunaike, “Automating Skin Disease Diagnosis Using Image Classification,” Proceedings of the World Congress on Engineering and Computer Science 2013 Vol II, WCECS 2013, 23-25 October 2013, San Francisco, USA.
+
+
+
+[2] R. Yasir, M. A. Rahman and N. Ahmed, "Dermatological disease detection using image processing and artificial neural network," 8th International Conference on Electrical and Computer Engineering, Dhaka, 2014, pp. 687-690, doi: 10.1109/ICECE.2014.7026918.
+
+
+
+[3] Ambad, Pravin S., and A. S. Shirat, “An Image Analysis System to Detect Skin Diseases,” IOSR Journal of VLSI and Signal Processing (IOSR-JVSP), Volume 6, Issue 5, Ver. I (Sep. - Oct. 2016), PP 17-25.
+
+
+
+[4] R S Gound, Priyanka S Gadre, Jyoti B Gaikwad and Priyanka K Wagh, "Skin Disease Diagnosis System using Image Processing and Data Mining," International Journal of Computer Applications 179(16):38-40, January 2018.
+
+
+
+[5] V. B. Kumar, S. S. Kumar, and V. Saboo, "Dermatological disease detection using image processing and machine learning," 2016 Third International Conference on Artificial Intelligence and Pattern Recognition (AIPR), Lodz, 2016, pp. 1-6, doi: 10.1109/ICAIPR.2016.7585217.
+
+
+[6] M. Shamsul Arifin, M. Golam Kibria, A. Firoze, M. Ashraful Amini and Hong Yan, "Dermatological disease diagnosis using color-skin images," 2012 International Conference on Machine Learning and Cybernetics, Xian, 2012, pp. 1675-1680, doi: 10.1109/ICMLC.2012.6359626.
+
+
+[7] Raja, K.S., Kiruthika, U. An Energy Efficient Method for Secure and Reliable Data Transmission in Wireless Body Area Networks Using RelA
 \end{document}
-
